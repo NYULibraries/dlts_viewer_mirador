@@ -46,3 +46,8 @@ h5[id$="-related-heading"] {
 span.MuiTabs-indicator {
   height: 0px !important;
 }
+
+/* rule used to remove the top border window highlight */
+div.mui-zsu38m-MuiToolbar-root-WindowTopBar-toolbar {
+  border-top: 0px !important;
+}

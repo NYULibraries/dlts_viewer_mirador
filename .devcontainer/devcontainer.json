@@ -8,27 +8,29 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
-			"version": "none", // uses the version in .nvmrc
+			"version": "none", // setting node version from nvmrc
 			"nodeGypDependencies": true
 		}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [5173],
+	"forwardPorts": [5173],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash -i -c 'nvm install && nvm use'",
+	"postCreateCommand": "bash -i -c 'nvm install && nvm use'", // uses version in .nvmrc
 
 	// Configure tool-specific properties.
 	"customizations": {
     "vscode": {
       "extensions": [
+		"editorconfig.editorconfig",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
       ]
     }
   },
   "runArgs": [
+	// give the dev container a recognizeable name in docker
     "--name=mirador_vite_devcontainer"
   ]
 

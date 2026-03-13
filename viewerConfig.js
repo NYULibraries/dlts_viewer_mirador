@@ -149,6 +149,7 @@ const defaultConfig = {
         letterSpacing: "0.02em",
         lineHeight: "1.75em",
         textTransform: "uppercase",
+        margin: "1rem 0 .2rem 0",
       },
       useNextVariants: true, // Set so that console deprecation warning is removed.
     },

@@ -41,3 +41,8 @@ h5[id$="-related-heading"] {
 .mosaic-tile {
   margin: 0 !important;
 }
+
+/* rule used to remove the highlighting bar on the sidebar */
+span.MuiTabs-indicator {
+  height: 0px !important;
+}

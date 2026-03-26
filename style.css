@@ -48,6 +48,6 @@ span.MuiTabs-indicator {
 }
 
 /* rule used to remove the top border window highlight */
-div.mui-zsu38m-MuiToolbar-root-WindowTopBar-toolbar {
+div.MuiToolbar-root.MuiToolbar-dense.mirador-window-top-bar {
   border-top: 0px !important;
 }

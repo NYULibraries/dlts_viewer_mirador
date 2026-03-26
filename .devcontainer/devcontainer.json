@@ -10,7 +10,8 @@
 		"ghcr.io/devcontainers/features/node:1": {
 			"version": "none", // setting node version from nvmrc
 			"nodeGypDependencies": true
-		}
+		},
+		"ghcr.io/devcontainers/features/aws-cli:1": {}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -31,7 +32,7 @@
   },
   "runArgs": [
 	// give the dev container a recognizeable name in docker
-    "--name=mirador_vite_devcontainer"
+    "--name=mirador_vite_devcontainer_cloned_in_volume"
   ]
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.

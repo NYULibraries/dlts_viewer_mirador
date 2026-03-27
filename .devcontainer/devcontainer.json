@@ -19,7 +19,10 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5173],
+	"forwardPorts": [
+		5173,
+		4173
+	],
 
 	// Use 'updateContentCommand' to install dependencies before the UI connects
 	"updateContentCommand": "bash -i -c 'nvm install && nvm use && npm install'",

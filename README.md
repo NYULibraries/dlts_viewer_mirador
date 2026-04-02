@@ -7,16 +7,14 @@ This new project uses the newer Mirador 4 which recommends using vite if you are
 
 ## Requirements
 
-- git
 - docker
 - vscode
   - `ms-vscode-remote.remote-containers`
 
-## Setup
+## Setup (vscode + docker)
 
-1. clone repo
-2. open docker
-3. run command (cmd + shift + p) `open in dev container`
+1. open docker
+2. open vscode (no project), open command pallete (cmd + shift + P): Clone repository in container volume
 
 ## Contributing
 
@@ -37,12 +35,9 @@ This new project uses the newer Mirador 4 which recommends using vite if you are
 
 ## Deployment
 
-- client side rendered react application with build with output to `dist`.
-- aws sync s3 bucket with new content
+> this is a client side rendered react application, statically deployed in an S3 bucket.
 
-Steps:
-
-1. build local project for production (look for build in `dist`)
-2. ensure you have AWS credentials for deployment
-3. push to AWS S3 bucket
-4. clear cache
+1. `npm run build` - output in `dist`
+2. `npm run preview` - check what the build looks like
+3. `aws sso login` or bind mount your aws credentials
+4. `npm run deploy`

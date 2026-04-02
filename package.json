@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "aws s3 sync ./dist s3://dlts-viewer-mirador-395362471827-us-east-1-an --delete"
   },
   "dependencies": {
     "@mui/material": "7.3.9",

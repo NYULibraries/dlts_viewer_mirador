@@ -3,7 +3,7 @@
 {
 	"name": "Mirador v4 Vite App",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 	// uncomment this section if you want to bind mount your aws credentials
 	// "mounts": [
 	// 	"source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind,readonly"
